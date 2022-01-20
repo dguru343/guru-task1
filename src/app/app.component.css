@@ -1,0 +1,30 @@
+.button {
+  border-radius: 6px;
+  border: 1px solid #858484;
+  display: inline-flex;
+  cursor: pointer;
+  color: #030003;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: wavy;
+  text-shadow: 0 1px 0 #ffffff;
+  outline: 0;
+  text-align: center;
+}
+.navigates {
+  background-color: #f3f3de;
+  text-align: center;
+  border: #0e0d0d;
+  border-style: double;
+  padding: 2em;
+  border-spacing: 2em;
+  white-space: nowrap;
+}
+.homepage {
+  background-color: #bad5ee;
+  border-color: rgb(7, 8, 10);
+  border-style: solid;
+  padding: 2em;
+}

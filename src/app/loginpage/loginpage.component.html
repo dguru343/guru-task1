@@ -1,0 +1,45 @@
+<form [formGroup]="loginform">
+  <h2>USER LOGIN</h2>
+  <label
+    >USERNAME: <input type="text" formControlName="username" />
+    <span
+      class="er"
+      *ngIf="
+        loginform.get('username').invalid && loginform.get('username').touched
+      "
+      >*USERNAME IS REQUIRED</span
+    ></label
+  ><br />
+  <label
+    >PASSWORD: <input type="password" formControlName="password" />
+    <span
+      class="er"
+      *ngIf="
+        loginform.get('password').invalid && loginform.get('password').touched
+      "
+      >*PASSWORD IS REQUIRED</span
+    ></label
+  ><br />
+  <label
+    >CONFIRM PASSWORD: <input type="cpassword" formControlName="cpassword" />
+    <span
+      class="er"
+      *ngIf="
+        loginform.get('cpassword').invalid && loginform.get('cpassword').touched
+      "
+      >*PASSWORD IS REQUIRED</span
+    ></label
+  ><br />
+  <button
+    type="submit"
+    (click)="Submit(); alerter(); reseter()"
+    [disabled]="!loginform.valid"
+  >
+    Submit
+  </button>
+  <button type="reset">Cancel</button><br />
+  <button class="button" routerLink="/signup">SIGNUP</button><br />
+  <button class="button" routerLink="/nopage">ForgotUsername</button><br />
+  <button class="button" routerLink="/nopage">ForgotPassword</button><br />
+</form>
+<button class="button" routerLink="/homepage">Back to Homepage</button><br />
